@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shymkent</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>SHIMKENT</span>
+        </div>
+        <div id="about">
+            <a href="#top" title="Возможности">Main</a>
+            <a href="#main" title="Возможности">About City</a>
+            <a href="#overview" title="Преимущества">Tourism</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Shyraily Shymkent</h1>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Shymkent City, Kazakhstan (Chimkent)</h2>
+            <span>City of South Kazakhstan region</span>
+
+            <span>Shymkent phone code - +7 7252; postal code - 160000</span>
+
+        </div>
+        <div class="text">
+            <span>Shymkent (also spelled Chimkent, Chimkent) is a city located in the south of Kazakhstan, in the valley of the Sairam River at the foot of the Ugam ridge at an altitude of 1,680 feet (512 m).
+
+        On June 19, 2018, by the decree of the President of Kazakhstan, the South Kazakhstan region was renamed Turkestan, and its administrative center was moved from Shymkent to Turkestan. Shymkent was withdrawn from the South Kazakhstan region and received the status of a city of republican significance (a separate administrative unit equated to the region).
+        
+        The population of Shymkent is about 1,011,000 people (2018).
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Tour</h2>
+    <h4>the world is more colorful with us</h4>
+
+    <div class="img">
+      <a href="https://www.youtube.com/watch?v=Pj3pbQfALCU"><img src="1228587.jpg" alt=""></a>
+      <span> SHYMKENT NIGHT</span>
+        </div>
+        <div class="img">
+            <a href="https://www.youtube.com/watch?v=Wv5c2bD7CZk"><img src="getlstd-property-photo.jpg" height="310px" alt=""></a>
+            <span>SHYMKENT MEGAPOLIS</span>
+        </div>
+    </div>
+
+
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+    * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+    
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        background-color: #fafafa;
+        font-family: Trebuchet MS, Helvetica;
+    }
+    
+    header {
+        width: 100%;
+        padding: 10px 0.5% 0px 0.5%;
+        background: transparent;
+        float: left;
+        position: fixed;
+        background-color: black;
+        opacity: 50%;
+    }
+    
+    header #logo {
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    header #logo span {
+        font-size: 1.7em;
+        line-height: 45px;
+        margin-left: 40px;
+        font-family: 'Suez One', serif;
+    }
+    
+    @media (min-width: 701px) {
+        #logo {
+            float: left;
+            width: 30%;
+            font-size: 1.1em;
+        }
+        #about {
+            float: right;
+            width: 67%;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        #logo {
+            margin-top: 15px;
+            width: 100%;
+            font-size: 1.5em;
+        }
+        #about {
+            float: left;
+            width: 100%;
+        }
+    }
+    
+    #about {
+        text-align: center;
+        font-size: 1em;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    
+    #about>a {
+        color: #fff
+    }
+    
+    #about>a:hover {
+        color: #b0b0b0;
+        text-decoration: underline;
+    }
+    
+    #about>a:not(:last-child) {
+        margin-right: 7%;
+    }
+    
+    .fixed {
+        z-index: 5000;
+        background-color: #fff;
+        border-bottom: 1px solid silver;
+    }
+    
+    header.fixed #logo {
+        color: #343434;
+    }
+    
+    .fixed #about a {
+        color: #343434
+    }
+    
+    .fixed #about a:hover {
+        color: #7c7c7c
+    }
+    
+    #top {
+        width: 100%;
+        background-image: url(6d400eeda39da1dfcf7702b4d2b417dc.jpg);
+        background-blend-mode: multiply;
+        background-color: #2e3a44;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+    }
+    
+    @media (min-width: 1001px) {
+        #top {
+            font-size: 3em;
+            height: 1000px;
+        }
+    }
+    
+    @media (max-width: 1000px) and (min-width: 651px) {
+        #top {
+            font-size: 2em;
+            height: 600px;
+        }
+    }
+    
+    @media (max-width: 650px) {
+        #top {
+            font-size: 1.3em;
+            padding-top: 50%;
+            height: 500px;
+        }
+    }
+    
+    @media (max-width: 450px) {
+        #top {
+            font-size: 0.9em;
+        }
+    }
+    
+    #top h1 {
+        padding-top: 20%;
+    }
+    
+    #top h3 {
+        color: #ccc;
+    }
+    
+    #main {
+        float: left;
+        background-color: #f6f6f6;
+        border-top: 2px solid silver;
+        color: #484848;
+        font-size: 1.3em;
+    }
+    
+    @media (min-width: 1401px) {
+        #main {
+            padding: 100px 20%;
+            width: 60%;
+        }
+    }
+    
+    @media (max-width: 1400px) {
+        #main {
+            padding: 100px 10%;
+            width: 80%;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        #main div {
+            width: 98%!important;
+            margin-bottom: 20px;
+        }
+    }
+    
+    #main div {
+        width: 48%;
+        margin-right: 2%;
+        float: left;
+    }
+    
+    #main h2 {
+        font-size: 3em
+    }
+    
+    #main span {
+        color: #a0a0a0
+    }
+    
+    #overview {
+        float: left;
+        background-image: url(kazahstan-02.jpg);
+        background-blend-mode: multiply;
+        background-color: #403f40;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+    
+    #overview h2 {
+        font-size: 4em
+    }
+    
+    #overview h4 {
+        color: #ccc;
+        font-size: 1.5em
+    }
+    
+    @media (min-width: 561px) {
+        #overview h2 {
+            font-size: 4em
+        }
+    }
+    
+    @media (max-width: 560px) {
+        #overview h2 {
+            font-size: 2em
+        }
+    }
+    
+    #overview .img {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+        margin-top: 50px;
+    }
+    
+    #overview .img:nth-child(odd) {
+        margin-left: 18%;
+    }
+    
+    #overview img {
+        background: #fafafa;
+        padding: 5px;
+        border: 2px solid silver;
+        float: left;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    #overview span {
+        float: left;
+        width: 100%;
+        font-size: 2em;
+        margin-top: 10px;
+    }
+    
+    @media (max-width: 700px) {
+        #overview .img {
+            width: 80%;
+            margin-right: 0!important;
+            margin-left: 10%!important;
+        }
+    }
+    /* Блок с контактами */
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: lighter;
+    }
+    
+    .btn {
+        float: left;
+        border-radius: 5px;
+        padding: 5px 9px;
+        font-size: 1.2em;
+        background-color: #ec6550;
+        text-shadow: #454545 0 0 2px;
+        cursor: pointer;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    .btn:hover {
+        background-color: #c15443;
+    }
+    
+    #faq {
+        background-color: #fff;
+        border-top: 2px dashed #e4e3e3;
+        width: 100%;
+        float: left;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    @media (min-width: 801px) {
+        #faq div {
+            width: 25%;
+            margin-left: 6%;
+            float: left;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        #faq div {
+            width: 80%;
+            margin-left: 10%;
+            float: left;
+        }
+    }
+    
+    #faq .title {
+        font-weight: lighter;
+        color: #a3a0ad;
+        margin-bottom: 20px;
+        font-size: 2.2em;
+    }
+    
+    #faq .heading {
+        color: #7d7d7d;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    
+    #faq p {
+        font-family: Arimo, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        color: #4a4a4a;
+        font-size: 0.95em;
+        margin-bottom: 40px;
+    }
+</style>
+
+</html>

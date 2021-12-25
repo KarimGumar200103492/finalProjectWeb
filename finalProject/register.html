@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="lenta">
+        <div class="icon">
+            <h2 class="logo"><a href="nurs.html">Nur-Sultan</a></h2>
+        </div>
+        <div class="menu">
+            <h2 class="logo1">Registration form</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="reg">
+                <h2>Registration</h2>
+                <input style="display: list-item" type="text" name="fullname" placeholder="Full_name">
+                <input style="display: list-item" type="number" name="age" placeholder="Age">
+                <label style="display: list-item; color: white; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">Gender</label>
+                <div style="display: flex">
+                    <label for="m"><p style="list-style: none; color: white; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">M</p></label><input name="gender" id="m" type="radio">
+                    <label for="f"><p style="list-style: none; color: white; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">F</p></label><input name="gender" id="f" type="radio">
+                </div>
+                <input style="display: list-item" type="email" name="email" placeholder="Email">
+                <input style="display: list-item" type="password" name="pass" placeholder="Password">
+                <input style="display: list-item" type="password" name="confirm" placeholder="Confirm password">
+                <button class="btn1"><a href ="nurs.html">Sign</a></button>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        background-color: rgba(252, 229, 167, 0.849);
+    }
+    
+    .lenta {
+        width: 1400px;
+        height: 75px;
+        margin: auto;
+    }
+    
+    .icon {
+        width: 350px;
+        float: left;
+        height: 70px
+    }
+    
+    .logo {
+        font-size: 35px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+    }
+    
+    .logo a {
+        color: rgb(255, 145, 1);
+        font-family: Arial;
+        text-decoration: none;
+    }
+    
+    .logo1 {
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+        float: left;
+        color: rgb(14, 13, 13);
+        padding-top: 10px;
+    }
+    
+    .reg {
+        width: 300px;
+        height: 550px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+        position: absolute;
+        top: 150px;
+        left: 550px;
+        border-radius: 10px;
+        padding: 25px;
+    }
+    
+    .reg h2 {
+        width: 220px;
+        font-family: sans-serif;
+        text-align: center;
+        color: rgb(255, 145, 1);
+        font-size: 22px;
+        background-color: rgba(255, 255, 255, 0.986);
+        border-radius: 10px;
+        margin: 2px;
+        padding: 8px;
+    }
+    
+    .reg input {
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid rgb(255, 145, 1);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: hsl(0, 0%, 99%);
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    
+    .reg input:focus {
+        outline: none;
+    }
+    
+    ::placeholder {
+        color: hsla(0, 0%, 100%, 0.984);
+    }
+    
+    .btn1 {
+        width: 240px;
+        height: 40px;
+        background: rgb(255, 145, 1);
+        border: none;
+        margin-top: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        transition: .4s ease;
+    }
+    
+    .btn1:hover {
+        background-color: white;
+    }
+    
+    .btn1 a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+</style>
+
+</html>
